@@ -1,0 +1,69 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class QQLogin extends JFrame implements ActionListener{
+	
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	
+	JLabel labUser;
+	JLabel labPass;
+	JTextField txtUser;
+	JPasswordField txtPass;
+	JButton btnLogin;
+	JButton btnReg;
+	JButton btnCancel;
+	
+	JPanel panInput;
+	JPanel panButton;
+	
+	QQLogin(){
+		
+		this.setTitle("µÇÂ¼½çÃæ");
+		this.setSize(250, 130);
+		
+		//new object
+		labUser = new JLabel();
+		labPass = new JLabel();
+		txtUser = new JTextField();
+		txtPass = new JPasswordField();
+		btnLogin= new JButton();
+		btnReg = new JButton();
+		btnCancel = new JButton();
+		
+		panInput = new JPanel();
+		panButton = new JPanel();
+		
+		//layout 		
+		panInput.setLayout(new GridLayout(2,2));
+		panInput.add(labUser);
+		panInput.add(txtUser);
+		panInput.add(labPass);
+		panInput.add(txtPass);		
+		
+		panButton.setLayout(new FlowLayout());
+		panButton.add(btnLogin);
+		panButton.add(btnReg);
+		panButton.add(btnCancel);
+		
+	}
+	
+	
+	public static void main(String[] args){
+		JFrame w = new QQLogin();
+		
+		w.setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

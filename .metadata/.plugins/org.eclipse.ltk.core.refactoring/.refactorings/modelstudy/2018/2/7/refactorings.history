@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;modelstudy.PetShop&apos; to &apos;PetShopDemo&apos;&#x0D;&#x0A;- Original project: &apos;modelstudy&apos;&#x0D;&#x0A;- Original element: &apos;modelstudy.PetShop&apos;&#x0D;&#x0A;- Renamed element: &apos;modelstudy.PetShopDemo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PetShop&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;modelstudy{PetShop.java[PetShop" matchStrategy="1" name="PetShopDemo" qualified="false" references="true" similarDeclarations="false" stamp="1518503934446" textual="false" version="1.0"/>
+</session>

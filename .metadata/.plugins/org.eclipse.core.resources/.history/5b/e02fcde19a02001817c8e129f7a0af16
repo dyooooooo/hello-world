@@ -1,0 +1,54 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class QQmain extends JFrame implements ActionListener{
+	JComboBox cmbUser;
+	JButton btnSend;
+	JTextField txtMess;
+	JPanel panSmall;
+	JPanel panBig = new JPanel();
+	JTextArea txtContent;
+	
+	QQmain(){
+		cmbUser = new JComboBox();
+		JButton btnSend = new JButton("send");
+		txtMess = new JTextField();
+		
+		
+		panSmall = new JPanel();		
+		panSmall.setLayout(new GridLayout(1,2));		
+		panSmall.add(cmbUser);
+		panSmall.add(btnSend);
+		
+		
+		panBig = new JPanel();		
+		panBig.setLayout(new GridLayout(2,1));		
+		panBig.add(txtMess);
+		panBig.add(panSmall);
+		
+		txtContent = new JTextArea();
+		
+		this.setLayout(new BorderLayout());
+		
+		this.add(panBig, BorderLayout.NORTH);
+		this.add(txtContent, BorderLayout.CENTER);
+		
+		
+	}
+	public static void main(String[] args){
+		JFrame w = new QQmain();		
+		
+		w.setSize(400,600);
+		w.setLocation(512, 184);		
+		
+		w.setVisible(true);		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

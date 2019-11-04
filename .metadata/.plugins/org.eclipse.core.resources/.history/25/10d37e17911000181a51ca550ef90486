@@ -1,0 +1,49 @@
+package modelstudy;
+
+public class PetShopDemo {
+	public static void main(String[] args){
+		
+	}
+}
+
+class PetShop{
+	
+}
+
+interface Pet{
+	String getPetName();
+	String getPetColor();
+	int getPetAge();
+}
+
+class Cat implements Pet{
+	private String petName;
+	private String petColor;
+	private int petAge;
+	@Override
+	public String getPetName() {
+		// TODO Auto-generated method stub
+		return this.petName;
+	}
+	@Override
+	public String getPetColor() {
+		// TODO Auto-generated method stub
+		return this.petColor;
+	}
+	@Override
+	public int getPetAge() {
+		// TODO Auto-generated method stub
+		return this.petAge;
+	}
+	
+	public void setPetName(String petName) {
+		this.petName = petName;
+	}
+	public void setPetColor(String petColor) {
+		this.petColor = petColor;
+	}
+	public void setPetAge(int petAge) {
+		this.petAge = petAge;
+	}
+	
+}

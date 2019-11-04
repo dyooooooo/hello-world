@@ -1,0 +1,42 @@
+content_assist_autoactivation_triggers_java=abcdefghijklmnopqrstuvwxyz.
+content_assist_category_order=org.eclipse.jdt.ui.templateProposalCategory\:0\u0000org.eclipse.jdt.ui.swtProposalCategory\:1\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\:2\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\:3\u0000org.eclipse.jdt.ui.textProposalCategory\:4\u0000org.eclipse.jdt.ui.javaAllProposalCategory\:5\u0000org.eclipse.mylyn.java.ui.javaAllProposalCategory\:6\u0000
+content_assist_disable_completion_trigger_chars=false
+content_assist_disabled_computers=org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000
+content_assist_favorite_static_members=org.junit.Assert.*;org.junit.Assume.*;org.junit.jupiter.api.Assertions.*;org.junit.jupiter.api.Assumptions.*;org.junit.jupiter.api.DynamicContainer.*;org.junit.jupiter.api.DynamicTest.*
+content_assist_insert_completion=true
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.awt.event.ActionListener"><rhs name\="instantMessage.ClientLoginView"/></lhs><lhs name\="java.util.EventListener"><rhs name\="instantMessage.ClientLoginView"/></lhs><lhs name\="javax.swing.JFrame"><rhs name\="instantMessage.ClientLoginView"/></lhs><lhs name\="javax.swing.WindowConstants"><rhs name\="instantMessage.ClientLoginView"/></lhs><lhs name\="javax.accessibility.Accessible"><rhs name\="instantMessage.ClientLoginView"/><rhs name\="javax.swing.JPanel"/></lhs><lhs name\="javax.swing.RootPaneContainer"><rhs name\="instantMessage.ClientLoginView"/></lhs><lhs name\="javax.swing.TransferHandler$HasGetTransferHandler"><rhs name\="instantMessage.ClientLoginView"/><rhs name\="javax.swing.JPanel"/></lhs><lhs name\="java.awt.Frame"><rhs name\="instantMessage.ClientLoginView"/></lhs><lhs name\="java.awt.MenuContainer"><rhs name\="instantMessage.ClientLoginView"/><rhs name\="javax.swing.JPanel"/></lhs><lhs name\="java.awt.Window"><rhs name\="instantMessage.ClientLoginView"/></lhs><lhs name\="java.awt.Container"><rhs name\="instantMessage.ClientLoginView"/><rhs name\="javax.swing.JPanel"/></lhs><lhs name\="java.awt.Component"><rhs name\="instantMessage.ClientLoginView"/><rhs name\="javax.swing.JPanel"/></lhs><lhs name\="java.awt.image.ImageObserver"><rhs name\="instantMessage.ClientLoginView"/><rhs name\="javax.swing.JPanel"/></lhs><lhs name\="instantMessage.ClientLoginView"><rhs name\="instantMessage.ClientLoginView"/></lhs><lhs name\="java.awt.LayoutManager"><rhs name\="java.awt.GridLayout"/><rhs name\="java.awt.FlowLayout"/><rhs name\="java.awt.BorderLayout"/></lhs><lhs name\="java.awt.GridLayout"><rhs name\="java.awt.GridLayout"/></lhs><lhs name\="java.awt.FlowLayout"><rhs name\="java.awt.FlowLayout"/></lhs><lhs name\="java.awt.LayoutManager2"><rhs name\="java.awt.BorderLayout"/></lhs><lhs name\="java.awt.BorderLayout"><rhs name\="java.awt.BorderLayout"/></lhs><lhs name\="javax.swing.JComponent"><rhs name\="javax.swing.JPanel"/></lhs><lhs name\="javax.swing.JPanel"><rhs name\="javax.swing.JPanel"/></lhs><lhs name\="java.awt.Paint"><rhs name\="java.awt.Color"/></lhs><lhs name\="java.awt.Transparency"><rhs name\="java.awt.Color"/></lhs><lhs name\="java.awt.Color"><rhs name\="java.awt.Color"/></lhs><lhs name\="java.awt.Font"><rhs name\="java.awt.Font"/></lhs></history>
+content_assist_number_of_computers=16
+content_assist_prefix_completion=true
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+editor_codemining_enabled=true
+fontPropagated=true
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.exception.name=e
+org.eclipse.jdt.ui.formatterprofiles.version=15
+org.eclipse.jdt.ui.gettersetter.use.is=true
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.overrideannotation=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jface.textfont=1|Consolas|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
+proposalOrderMigrated=true
+spelling_ignore_ampersand_in_properties=true
+spelling_ignore_digits=true
+spelling_ignore_java_strings=true
+spelling_ignore_mixed=true
+spelling_ignore_non_letters=true
+spelling_ignore_sentence=true
+spelling_ignore_single_letters=true
+spelling_ignore_upper=true
+spelling_ignore_urls=true
+spelling_locale_initialized=true
+spelling_user_dictionary_encoding=
+tabWidthPropagated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

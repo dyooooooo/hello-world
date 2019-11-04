@@ -1,0 +1,26 @@
+import java.io.*;
+
+public class MyEncryp {
+	public static void main(String[] args){
+		try{
+			
+			File fin = new File("c:/work/test.txt");
+			File fout = new File("c:/work/test1.txt");			
+			
+			FileInputStream fins = new FileInputStream(fin);
+			FileOutputStream fouts = new FileOutputStream(fout);
+			
+			int length = fins.available();
+			
+			for(int i=0; i<length; i++){
+				fouts.write(fins.read()+100);
+			}
+			
+			
+			fins.close();
+			fouts.close();
+			
+		}catch(Exception e){}
+	}
+
+}

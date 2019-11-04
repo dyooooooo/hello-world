@@ -1,0 +1,78 @@
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+public class QQLogin extends JFrame implements ActionListener{
+	
+	JTextField txtUser; 
+	JPasswordField txtPss = new JPasswordField();
+	JLabel labUser= new JLabel("用户名");
+	JLabel labPsd = new JLabel("密码");
+	JPanel panInput = new JPanel();
+	JButton bntLogin = new JButton("登录");
+	JButton bntReg = new JButton("注册");
+	JButton bntCancel = new JButton("取消");
+	JPanel panButton = new JPanel();
+	
+	QQLogin(){
+		super("登录窗口");
+		this.setSize(250,130);
+		this.panInput.setLayout(new GridLayout(2,2));
+		this.panInput.add(this.labUser);
+		this.panInput.add(this.txtUser);
+		this.panInput.add(this.labPsd);
+		this.panInput.add(this.txtPss);
+		this.panButton.setLayout(new FlowLayout());
+		this.panButton.add(bntLogin);
+		this.panButton.add(bntReg);
+		this.panButton.add(bntCancel);
+		this.setLayout(new BorderLayout());
+		this.add(panInput, BorderLayout.CENTER);
+		this.add(panButton,BorderLayout.SOUTH);
+		
+	}
+	
+	public static void main(String[] args){	
+
+		QQLogin w = new QQLogin();
+		
+		
+		w.setVisible(true);
+		
+		
+		
+
+		
+		
+		
+		
+
+		
+
+		
+		//register event moniter
+		QQLogin e = new QQLogin();
+		bntLogin.addActionListener(e);
+		bntReg.addActionListener(e);
+		bntCancel.addActionListener(e);
+				
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		System.out.println(arg0.getActionCommand());
+		
+		
+	}
+}

@@ -1,0 +1,12 @@
+import javax.swing.*;
+
+public class MyNote {
+	public static void main(String[] args){
+		JFrame w = new JFrame("Notebook");
+		w.setSize(600, 800);
+		w.setLocation(600, 100);
+		
+		w.setVisible(true);
+	}
+
+}

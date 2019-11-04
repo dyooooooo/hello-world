@@ -1,0 +1,54 @@
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.*;
+
+public class MyNote {
+	public static void main(String[] args){
+		JFrame w = new JFrame("Notebook");
+		w.setSize(600, 800);
+		w.setLocation(400, 100);
+		
+		MyPanel mp = new MyPanel();
+		w.add(mp);
+		
+		w.addKeyListener(mp);
+		mp.addKeyListener(mp);		
+		
+		
+		w.setVisible(true);
+	}
+
+}
+
+
+class MyPanel extends JPanel implements KeyListener{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public void paint(Graphics g){
+		super.paint(g);
+		
+	}
+
+	@Override
+	public void keyPressed(KeyEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keyReleased(KeyEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keyTyped(KeyEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

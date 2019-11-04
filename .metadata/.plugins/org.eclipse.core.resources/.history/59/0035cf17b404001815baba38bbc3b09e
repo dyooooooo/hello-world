@@ -1,0 +1,47 @@
+import java.sql.*;
+
+
+
+public class TestSQL {
+	public static void main(String[] args){
+		Connection cn = null;
+		//Statement st = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		
+		
+		
+		String user = "eason";
+		String psd = "dy1023";
+		
+		
+		try{
+			Class.forName("org.gjt.mm.mysql.Driver");
+			cn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/qq", "root", "dy1023");
+			//st = cn.createStatement();
+			ps = cn.prepareStatement("select * from user where username=? and password=?");
+			ps.setString(1, user);
+			ps.setString(2, psd);
+			//rs = st.executeQuery("select * from employee");
+			rs = ps.executeQuery();
+			
+			if(rs.next()){
+				System.out.println("success");
+			}else{
+				System.out.println("fail");
+			}
+				
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			try{
+				cn.close();
+				//st.close();
+				ps.close();
+				rs.close();
+				
+			}catch(Exception ex){}
+			
+		}
+	}
+}

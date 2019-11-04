@@ -1,0 +1,36 @@
+import java.io.*;
+
+public class MyReadFile{
+	
+	public static void main(String[] args){
+		try{
+			
+			//locate resource
+			File fin = new File("c:/work/src.zip");
+			File fout = new File("c:/work/src3.zip");	
+			
+			//build up pipe
+			FileInputStream fins = new FileInputStream(fin);
+			FileOutputStream fouts= new FileOutputStream(fout);
+			
+			byte[] tmp = new byte[8192];
+			
+			//operate pipe
+			int length = fins.available()/8192;
+			
+			for(int i=0;i<length;i++){
+				fins.read(tmp);
+				fouts.write(tmp);				
+			}
+			
+			int size= fins.read(tmp);
+			fouts.write(tmp, 0, size);
+			
+			fins.close();
+			fouts.close();
+			
+		}catch(Exception e){}
+		
+		
+	}
+}

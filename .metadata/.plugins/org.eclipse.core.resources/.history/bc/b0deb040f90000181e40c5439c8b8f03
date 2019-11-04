@@ -1,0 +1,13 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class QQmain {
+	public static void main(String[] args){
+		JFrame w = new JFrame();
+		w.setSize(400,600);
+		
+		
+		w.setVisible(true);		
+	}
+
+}

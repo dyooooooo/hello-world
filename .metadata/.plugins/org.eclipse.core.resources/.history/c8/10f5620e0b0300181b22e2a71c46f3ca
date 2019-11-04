@@ -1,0 +1,95 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.io.*;
+
+public class QQmain extends JFrame implements ActionListener{
+	JComboBox cmbUser;
+	JButton btnSend;
+	JTextField txtMess;
+	JPanel panSmall;
+	JPanel panBig;
+	JTextArea txtContent;
+	JScrollPane spContent;
+	
+	QQmain(){
+		cmbUser = new JComboBox();
+		JButton btnSend = new JButton("send");
+		txtMess = new JTextField();
+		
+		
+		panSmall = new JPanel();		
+		panSmall.setLayout(new GridLayout(1,2));		
+		panSmall.add(cmbUser);
+		panSmall.add(btnSend);
+		
+		
+		panBig = new JPanel();		
+		panBig.setLayout(new GridLayout(2,1));		
+		panBig.add(txtMess);
+		panBig.add(panSmall);
+		
+		txtContent = new JTextArea();
+		spContent = new JScrollPane(txtContent);
+		
+		this.setLayout(new BorderLayout());
+		
+		this.add(panBig, BorderLayout.NORTH);
+		this.add(spContent, BorderLayout.CENTER);
+		
+		
+		this.setSize(380,600);
+		this.setLocation(512, 184);
+		
+		btnSend.addActionListener(this);
+		
+		
+		this.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+		
+		this.addWindowListener(new WindowAdapter() {  		  
+			  
+				public void windowClosing(WindowEvent e) {  
+					super.windowClosing(e);  
+					//加入动作  
+					 try{
+						 
+					    File fout = new File("c:/work/message.txt");
+					    
+					    FileWriter fw = new FileWriter(fout);
+					    
+					    PrintWriter pw = new PrintWriter(fw);
+					    
+					    pw.print(txtContent.getText());
+					    pw.close();
+					    
+					    
+					    
+					 }catch(Exception ex){}  
+				 }  
+			  
+			}); 
+		
+	}
+	
+	
+	
+	
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		if(e.getActionCommand().equals("send")){
+			String mt = txtMess.getText();
+			
+			if(!mt.equals("")){
+				txtMess.setText("");			
+				txtContent.append(mt);
+				txtContent.append("\n");
+			}
+			
+			
+		}
+		
+	}
+
+}

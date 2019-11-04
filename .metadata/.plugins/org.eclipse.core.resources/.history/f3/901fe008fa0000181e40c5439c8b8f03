@@ -1,0 +1,39 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class QQmain {
+	public static void main(String[] args){
+		JFrame w = new JFrame();
+		w.setSize(400,600);
+		w.setLocation(512, 384);
+		
+		JTextField txtMess = new JTextField();
+		JComboBox cmbUser = new JComboBox();
+		JButton btnSend = new JButton("send");
+		
+		JPanel panSmall = new JPanel();
+		panSmall.setLayout(new GridLayout(1,2));
+		
+		panSmall.add(cmbUser);
+		panSmall.add(btnSend);
+		
+		
+		JPanel panBig = new JPanel();
+		panBig.setLayout(new GridLayout(2,1));
+		
+		panBig.add(txtMess);
+		panBig.add(panSmall);
+		
+		
+		JTextArea txtContent = new JTextArea();
+		
+		
+		w.setLayout(new BorderLayout());
+		
+		w.add(panBig, BorderLayout.NORTH);
+		w.add(txtContent, BorderLayout.CENTER);
+		
+		w.setVisible(true);		
+	}
+
+}
